@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(to top right, #373b44, #4286f4 100%);
+}
+
+main {
+  position: relative;
+  height: 60vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 20px 20px 35px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+}
+
+section.left {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+section.right {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.score {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.current {
+  background-color: #4286f4;
+  padding: 4%;
+  width: 45%;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.current-title {
+  font-size: 1.8rem;
+}
+
+.current-score {
+  font-size: 1.6rem;
+  padding: 2%;
+}
+
+.active-player {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 35px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.btn-reset {
+  transform: translate(-50%);
+  left: 50%;
+  top: 10%;
+}
+
+.btn-roll {
+  transform: translate(-50%);
+  left: 50%;
+  top: 60%;
+}
+
+.btn-hold {
+  transform: translate(-50%);
+  left: 50%;
+  top: 80%;
+}
+
+.dice {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 30%;
+  height: 100px;
+  width: 100px;
+}
+
+.winner {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+  display: none;
+}
